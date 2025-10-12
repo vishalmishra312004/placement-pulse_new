@@ -273,7 +273,7 @@ export default function TestimonialsPage() {
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="h-6 w-6 fill-yellow-400 text-yellow-400" />
               ))}
-              <span className="ml-2 text-lg font-semibold">4.9/5 from 1,000+ MBA students</span>
+              <span className="ml-2 text-lg font-semibold">4.9/5 from MBA students</span>
             </div>
           </div>
         </div>

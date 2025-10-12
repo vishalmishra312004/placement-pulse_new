@@ -363,24 +363,24 @@ export default function EnrollPage() {
                     </div>
                     <Separator />
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center">
-                      <div>
+                      {/* <div>
                         <Clock className="h-6 w-6 mx-auto mb-2 text-accent" />
                         <div className="text-sm font-medium">{courseInfo.duration}</div>
                         <div className="text-xs text-muted-foreground">Content</div>
-                      </div>
-                      <div>
-                        <Users className="h-6 w-6 mx-auto mb-2 text-accent" />
+                      </div> */}
+                      {/* <div>
+                        <Users className="h-6 w-6 mx-auto mb-2 text-accent" /> */}
                         {/* <div className="text-sm font-medium">{courseInfo.students}</div> */}
-                        <div className="text-sm font-medium">2,500+</div>
+                        {/* <div className="text-sm font-medium">2,500+</div>
                         <div className="text-xs text-muted-foreground">Students</div>
-                      </div>
-                      <div className="col-span-2 sm:col-span-1">
+                      </div> */}
+                      {/* <div className="col-span-2 sm:col-span-1">
                         <Award className="h-6 w-6 mx-auto mb-2 text-accent" />
                         <div className="text-sm font-medium">{courseInfo.level}</div>
                         <div className="text-xs text-muted-foreground">Level</div>
-                      </div>
+                      </div> */}
                     </div>
-                    <div className="pt-4 border-t">
+                    {/* <div className="pt-4 border-t">
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
                         <div className="flex justify-between items-center">
                           <span className="text-muted-foreground">Instructor:</span>
@@ -391,7 +391,7 @@ export default function EnrollPage() {
                           <span className="font-medium">{courseInfo.category}</span>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </CardContent>
               </Card>
