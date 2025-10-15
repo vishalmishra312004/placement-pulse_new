@@ -798,7 +798,7 @@ export default function HomePage() {
                 content:
                   "I lacked confidence and clarity during GD-PI prep, but Placement Pulse gave me the right guidance, practice, and support. Their mentorship boosted my performance and helped me secure admission to IIM Indore.",
                 rating: 5,
-                image: "https://cdn.corenexis.com/files/b/8434467168.jpg"
+                image: "./hersh.jpeg"
               },
               {
                 name: "Abhijit Kundu",
@@ -806,14 +806,14 @@ export default function HomePage() {
                 content:
                   "I was nervous about GD-PI, CV, and LinkedIn, but Placement Pulse guided me throughout—helping polish my profile, boosting my confidence, and ultimately enabling me to crack Symbiosis Pune.",
                 rating: 5,
-                image: "https://cdn.corenexis.com/files/b/6237293168.jpg"
+                image: "./abhijit.jpeg"
               },
               {
                 name: "Davinder Singh",
                 role: "DBE",
                 content: "I always felt unsure about how to present myself during GD-PI and on LinkedIn. Placement Pulse helped me identify my strengths, refine my profile, and build a structured preparation approach. Thanks to their guidance and constant feedback, I was able to confidently convert my call from DBE",
                 rating: 5,
-                image: "https://cdn.corenexis.com/files/b/4767129168.jpg"
+                image: "./davinder.jpeg"
               },
             ].map((testimonial, index) => (
               <Card

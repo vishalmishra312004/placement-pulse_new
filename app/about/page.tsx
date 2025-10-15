@@ -30,7 +30,7 @@ export default function AboutPage() {
       name: "Kamlesh Kumawat",
       title: "Founder",
       subtitle: "",
-      image: "https://cdn.corenexis.com/files/b/5648343168.jpg",
+      image: "./kamlesh.jpg",
       linkedinUrl: "https://linkedin.com/in/kamleshh-kumawat"
     },
     { 
@@ -38,7 +38,7 @@ export default function AboutPage() {
       name: "Adarsh Vijayvargiya",
       title: "Co-Founder",
       subtitle: "",
-      image: "https://cdn.corenexis.com/files/b/1182911168.jpg",
+      image: "./adarsh.jpg",
       linkedinUrl: "https://linkedin.com/in/adarsh-vijayvargiya-27484a21a"
     },
     {
@@ -46,7 +46,7 @@ export default function AboutPage() {
       name: "Gaurav Shukla",
       title: "Co-Founder",
       subtitle: "",
-      image: "https://cdn.corenexis.com/files/b/7883948168.jpg",
+      image: "./gaurav.jpg",
       linkedinUrl: "https://linkedin.com/in/gaurav-shukla-58b436178"
     },
     {
@@ -54,7 +54,7 @@ export default function AboutPage() {
       name: "Mukul Singh",
       title: "Co-Founder",
       subtitle: "",
-      image: "https://cdn.corenexis.com/files/b/3299261168.jpg",
+      image: "./mukul.jpg",
       linkedinUrl: "https://linkedin.com/in/mukul-singh-13655837a"
     }
   ]
