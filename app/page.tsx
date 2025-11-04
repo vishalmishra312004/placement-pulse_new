@@ -806,14 +806,14 @@ export default function HomePage() {
                 content:
                   "I was nervous about GD-PI, CV, and LinkedIn, but Placement Pulse guided me throughout—helping polish my profile, boosting my confidence, and ultimately enabling me to crack Symbiosis Pune.",
                 rating: 5,
-                image: "./abhijit.jpeg"
+                image: "./Abhijit.jpeg"
               },
               {
                 name: "Davinder Singh",
                 role: "DBE",
                 content: "I always felt unsure about how to present myself during GD-PI and on LinkedIn. Placement Pulse helped me identify my strengths, refine my profile, and build a structured preparation approach. Thanks to their guidance and constant feedback, I was able to confidently convert my call from DBE",
                 rating: 5,
-                image: "./davinder.jpeg"
+                image: "./Davinder.jpeg"
               },
             ].map((testimonial, index) => (
               <Card
