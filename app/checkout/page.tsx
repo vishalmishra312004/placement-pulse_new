@@ -26,6 +26,7 @@ export default function CheckoutPage() {
   const [allCourses, setAllCourses] = useState<Course[]>([])
   const [loading, setLoading] = useState(true)
   const [processing, setProcessing] = useState(false)
+  const [termsAccepted, setTermsAccepted] = useState(false)
 
   // Load cart + courses
   useEffect(() => {
@@ -233,12 +234,37 @@ export default function CheckoutPage() {
                   <div className="text-xl font-bold">₹{totalDisplay}</div>
                 </div>
 
+                {/* Terms and Conditions */}
+                <div className="border-t pt-4 mt-4">
+                  <div className="flex items-start gap-3 p-4 bg-muted/30 rounded-lg">
+                    <input
+                      type="checkbox"
+                      id="terms-checkbox"
+                      checked={termsAccepted}
+                      onChange={(e) => setTermsAccepted(e.target.checked)}
+                      className="mt-1 h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary cursor-pointer"
+                    />
+                    <label htmlFor="terms-checkbox" className="text-sm text-muted-foreground cursor-pointer flex-1">
+                      I agree to the{" "}
+                      <Link href="/terms-conditions" target="_blank" className="text-primary hover:underline font-medium">
+                        Terms and Conditions
+                      </Link>
+                      {" "}and understand that{" "}
+                      <strong className="text-destructive">all course payments are FINAL and NON-REFUNDABLE</strong>. 
+                      By proceeding, I acknowledge that I have read and accepted that{" "}
+                      <strong className="text-destructive">NO REFUNDS or CANCELLATIONS</strong> will be provided under any circumstances.
+                    </label>
+                  </div>
+                  {!termsAccepted && (
+                    <p className="text-xs text-muted-foreground mt-2 ml-7">
+                      ⚠️ You must accept the terms and conditions to proceed with payment
+                    </p>
+                  )}
+                </div>
+
                 <div className="flex items-center justify-end gap-2">
                   <Button variant="outline" onClick={clearCart} disabled={processing}>Clear</Button>
-                  {/* <Button onClick={handlePayAndEnroll} disabled={processing || items.length === 0}>
-                    {processing ? 'Processing...' : `Pay & Enroll (${items.length})`}
-                  </Button> */}
-                  <Button onClick={handlePayAndEnroll} disabled={processing || items.length === 0}>
+                  <Button onClick={handlePayAndEnroll} disabled={processing || items.length === 0 || !termsAccepted}>
                     {processing ? 'Processing...' : `Pay & Enroll (${items.length})`}
                   </Button>
                 </div>
