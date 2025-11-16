@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     canonical: process.env.NEXT_PUBLIC_BASE_URL || 'https://placementpulse.com',
   },
   verification: {
-    google: 'your-google-verification-code', // Add your Google Search Console verification code
+    google: 'd7859fa3abc9a8c5', // Add your Google Search Console verification code
   },
 }
 
